@@ -1,0 +1,66 @@
+<html>
+
+<head>
+        <title>
+                Weather Prediction
+        </title>
+        <style>
+                body {
+                        background-image: url('/static/weather.jpg');
+                        background-repeat: no-repeat;
+                }
+        </style>
+
+<body>
+        <h1>Rain Predictor</h1>
+
+        <div>
+                <form action="/predict" method="POST">
+                        <h3 style="color:red;">Enter the values for Rain Prediction</h3>
+                        <select name="Location" required="required">
+                                <option value="">Select Location</option>
+                                <option value="Sydney">Sydney</option>
+                                <option value="Melbourne">Melbourne</option>
+                                <!-- Add more options as needed -->
+                        </select><br>
+                        <input type="text" name="MinTemp" placeholder="MinTemp" required="required" /><br>
+                        <input type="text" name="MaxTemp" placeholder="MaxTemp" required="required" /><br>
+                        <input type="text" name="Rainfall" placeholder="Rainfall" required="required" /><br>
+                        <select name="WindGustDir" required="required">
+                                <option value="">Select WindGustDir</option>
+                                <option value="N">North</option>
+                                <option value="S">South</option>
+                                <!-- Add more options as needed -->
+                        </select><br>
+                        <input type="text" name="WindGustSpeed" placeholder="WindGustSpeed" required="required" /><br>
+                        <select name="WindDir9am" required="required">
+                                <option value="">Select WindDir9am</option>
+                                <option value="N">North</option>
+                                <option value="S">South</option>
+                                <!-- Add more options as needed -->
+                        </select><br>
+                        <select name="WindDir3pm" required="required">
+                                <option value="">Select WindDir3pm</option>
+                                <option value="N">North</option>
+                                <option value="S">South</option>
+                                <!-- Add more options as needed -->
+                        </select><br>
+                        <input type="text" name="WindSpeed9am" placeholder="WindSpeed9am" required="required" /><br>
+                        <input type="text" name="WindSpeed3pm" placeholder="WindSpeed3pm" required="required" /><br>
+                        <input type="text" name="Humidity9am" placeholder="Humidity9am" required="required" /><br>
+                        <input type="text" name="Humidity3pm" placeholder="Humidity3pm" required="required" /><br>
+                        <input type="text" name="Pressure9am" placeholder="Pressure9am" required="required" /><br>
+                        <input type="text" name="Pressure3pm" placeholder="Pressure3pm" required="required" /><br>
+                        <input type="text" name="Temp9am" placeholder="Temp9am" required="required" /><br>
+                        <input type="text" name="Temp3pm" placeholder="Temp3pm" required="required" /><br>
+                        <select name="RainToday" required="required">
+                                <option value="">Select RainToday</option>
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                        </select><br>
+                        <input type="submit" value="Submit">
+                </form>
+        </div>
+</body>
+
+</html>
