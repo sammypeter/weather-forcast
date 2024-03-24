@@ -2,4 +2,10 @@
 
 flask is used in fronted 
 
-<img src="">
+<img src="https://github.com/sammypeter/weather-forcast/blob/main/1.png">
+
+<img src="https://github.com/sammypeter/weather-forcast/blob/main/2.png">
+
+<img src="https://github.com/sammypeter/weather-forcast/blob/main/3.png">
+
+<img src="https://github.com/sammypeter/weather-forcast/blob/main/4.png">
